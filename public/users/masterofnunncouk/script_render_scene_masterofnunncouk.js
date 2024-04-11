@@ -30,7 +30,7 @@ const text_heig = -1;
 const loader_title = new GLTFLoader;
 
 
-var font_asd_loader_path = "../fonts/Super_Corn_Regular_JSON.json";
+var font_asd_loader_path = ".../fonts/Super_Corn_Regular_JSON.json";
 
 
  const screenWidth = window.innerWidth,

@@ -30,7 +30,7 @@ const loader = new FontLoader();
 let font;
 let font_heading;
 const text_heig = -1;
-let font_path = "fonts/Super_Corn_Regular_JSON.json";
+let font_path = "/fonts/Super_Corn_Regular_JSON.json";
 
 
 
@@ -174,7 +174,7 @@ scene.add(directionalLight);
 /////////////////////////////////////////////////////////////////
 //////////      GEOMETRY SPHERE BACKGROUND      /////////////////
 /////////////////////////////////////////////////////////////////
-var path1 = "backgrounds/image_background_14.jpg";
+var path1 = "/backgrounds/image_background_14.jpg";
 
 let sphereGeometry = new THREE.SphereGeometry(500, 60, 40);
     sphereGeometry.scale(-1, 1, 1);
@@ -236,7 +236,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 });  // font loader
 ////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -253,7 +253,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 ///////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -298,7 +298,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     scene.add(title); 
   });  // font loader
 ///////////////////////////////////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -315,7 +315,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 ////////////////////////////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -362,7 +362,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     scene.add(title); 
   }); 
 ///////////////////////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_3.glb", (e => {
     const geometry_rect_image_card_feature_3 = e.scene;
   geometry_rect_image_card_feature_3.traverse((e => {
         if (e.isMesh) {
@@ -377,7 +377,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
   geometry_rect_image_card_feature_3.scale.set(1, 1, 2), scene.add(geometry_rect_image_card_feature_3)
 }));
 ///////////////////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_3.glb", (e => {
     const geometry_rect_image_card_feature_3_2 = e.scene;
   geometry_rect_image_card_feature_3_2.traverse((e => {
         if (e.isMesh) {
@@ -427,11 +427,11 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2, z_POS_cardsfeatures1); 
-    title.userData.link = "https://trixdi.fun/sellanythingonline"
+    title.userData.link = "https://triixdi.vercel.app/masterofnunn.co.uk"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -439,7 +439,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.fun/sellanythingonline"
+          e.userData.link = "https://triixdi.vercel.app/masterofnunn.co.uk"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer,z_POS_card_front);
@@ -448,7 +448,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -456,7 +456,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.fun/sellanythingonline"
+          e.userData.link = "https://triixdi.vercel.app/masterofnunn.co.uk"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer,z_POS_card_back);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -505,7 +505,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////// ///////////////////////////// /////////////////////////////
-loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("/geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_cta_examples = e.scene;
   geometry_rect_image_card_cta_examples.traverse((e => {
         if (e.isMesh) {
@@ -521,7 +521,7 @@ loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
   geometry_rect_image_card_cta_examples.scale.set(1, 1, 2), scene.add(geometry_rect_image_card_cta_examples)
 }));
 //////////////////////// ///////////////////////////// /////////////////////////////
-loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("/geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_cta_examples2 = e.scene;
   geometry_rect_image_card_cta_examples2.traverse((e => {
         if (e.isMesh) {
@@ -577,7 +577,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -594,7 +594,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -654,7 +654,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -671,7 +671,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -716,7 +716,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -733,7 +733,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 //////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {

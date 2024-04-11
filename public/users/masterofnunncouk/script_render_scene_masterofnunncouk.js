@@ -30,7 +30,7 @@ const text_heig = -1;
 const loader_title = new GLTFLoader;
 
 
-var font_asd_loader_path = "/fonts/Super_Corn_Regular_JSON.json";
+var font_asd_loader_path = "fonts/Super_Corn_Regular_JSON.json";
 
 
  const screenWidth = window.innerWidth,
@@ -456,10 +456,10 @@ image_social_media_wid = 8,
 ///////////////////////////////////////////////////////////////
 var user_username_Placeholder = "Master of Nunn.co.uk";
 var user_bio_Placeholder = ['MasterofNunn.co.uk a Life', 'Planner Club to Inspire &', 'Motivate and give', 'Self-Esteem.'];
-var user_profile_pic_placeholder = "static/users/masterofnunncouk/image_profile_pic.PNG/"; 
+var user_profile_pic_placeholder = "users/masterofnunncouk/image_profile_pic.PNG/"; 
 var user_labels_link = ['Master of Nunn, Inspirational Motivator', 'Retro Shop', 'Fancy a Drink', 'Life Planner Club', ['Party T shirts - beautiful', 'designs for partying'], 'Virtual Garden Designer & Plantsman', 'My Book Store'];
 var links_list = [['https://MasterofNunn.co.uk'], ['https://seekandfindit.co.uk'], ['https://Fancyadrink.co.uk'], ['https://Lifeplanner.club'], ['https://party-t-shirts-3.creator-spring.com/'], ['https://masterofnunn.co.uk'], ['https://masterofnunn.co.uk'], [], [], [], [], []];
-var user_selected_background = "static/backgrounds/image_background_10.jpg";
+var user_selected_background = "backgrounds/image_background_10.jpg";
 var user_social_media_links = [['https://facebook.com/www.seekandfindit.co.uk', 'facebook'], ['https://www.instagram.com/masterofnunn/', 'instagram'], ['mailto:masterofnunncouk@gmail.com', 'emailadress']];
 
 
@@ -671,7 +671,7 @@ if (strings_bio.length === 1){
 
 /////////////////////
 if (!(strings_bio.length === 0)) {
-loader_title.load("static/geometries/geometry_card_capsule_feature_size_3.glb", (e => {
+loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -688,7 +688,7 @@ loader_title.load("static/geometries/geometry_card_capsule_feature_size_3.glb", 
   scene.add(geometry_rect_image_card_feature_1)
 }));
 //////////////////////////////
-loader_title.load("static/geometries/geometry_card_capsule_feature_size_3.glb", (e => {
+loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -814,7 +814,7 @@ for (let i = 0; i < numGeometries; i++) {
 };
 ////////////////////////
 for (let i = 0; i < numGeometries; i++) {
-loader_title.load("static/geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
   y_position_x_link_geo = positions[i];
   if (i >=  6 ){
     x_position_x_link_geo =  -59.5;
@@ -842,7 +842,7 @@ loader_title.load("static/geometries/geometry_card_square_cta_form.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 ///////////////////////
-loader_title.load("static/geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -982,7 +982,7 @@ console.log("enter if string");
   } //  for loop
     } // else
 ///////////////////////
-loader_title.load("static/geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
+loader_title.load("geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -999,7 +999,7 @@ loader_title.load("static/geometries/geometry_capsule_size_1_roundedXL.glb", (e 
   scene.add(geometry_rect_image_card_feature_1)
 }));
 /////////////////////////////////
-loader_title.load("static/geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
+loader_title.load("geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {

@@ -127,7 +127,7 @@ let cards = [];
 
 
 
-var paths = ["images/image_background_homepage.jpg", "static/backgrounds/image_background_16.jpg","static/backgrounds/image_background_9.jpg","static/backgrounds/image_background_10.jpg" ],
+var paths = [ " /backgrounds/image_background_16.jpg"," /backgrounds/image_background_9.jpg"," /backgrounds/image_background_10.jpg" ],
     currentPathIndex = 0;
 
 

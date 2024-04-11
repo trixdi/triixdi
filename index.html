@@ -9,17 +9,23 @@
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta name="description" content="Discover top-quality garden hoses and bird feeders at 'Of Hoses and Feeders.Find the perfect tools to elevate your outdoor experience and nurture your garden and feathered friends. Shop our curated selection of affiliate products and transform your outdoor space today! ">
 
-
-
-
-
-
+    
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.155/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.155/examples/jsm/"
+      
+          }
+        }
+    </script>
 
 
 
@@ -33,11 +39,35 @@
 
   </head>
   <body class="bg-green-200">
- asdasd
 
 
 
 
-    <script  src="script.js"></script>
+    <div style="position: fixed; bottom: 0;   text-align: center;  margin-bottom: 11px;  padding: 10px;">  
+
+        <div   style="    display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end; border-radius: 4px;  ; background: rgba(0, 130, 155, 0.5);  padding: 4px;max-width: 290px">
+    
+        <a id="changeBackgroundButton" style=" color: #FFFFFF; cursor: pointer; text-decoration: none; " >Change background image. </a>
+    
+      </div>
+          </div>
+ 
+
+
+
+
+
+    <script type="module" src="/script_render_homepage.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js "></script>
+
+
+
+
+
+
+
   </body>
 </html>

@@ -456,7 +456,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://triixdi.vercel.app/masterofnunn.co.uk"
+          e.userData.link = "https://triixdi.vercel.app/users/page_masterofnunncouk.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer,z_POS_card_back);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);

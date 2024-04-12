@@ -31,7 +31,7 @@ const loader = new FontLoader();
 let font;
 let font_heading;
 const text_heig = -1;
-let font_path = "static/fonts/Super_Corn_Regular_JSON.json";
+let font_path = "../../fonts/Super_Corn_Regular_JSON.json";
 
 
 
@@ -143,7 +143,7 @@ directionalLight.position.set(0, 30, 11), scene.add(directionalLight);
 
 
 
-var path1 = "static/users/aboutus/images/image_background_aboutus.jpg";
+var path1 = "images/image_background_aboutus.jpg";
 let sphereGeometry = new THREE.SphereGeometry(500, 60, 40);
 sphereGeometry.scale(-1, 1, 1);
 let textureLoader = new THREE.TextureLoader,
@@ -162,7 +162,7 @@ let textureLoader = new THREE.TextureLoader,
 //////////////////////////////////////////////////
 var mesh = new THREE.Mesh(sphereGeometry, material);
 scene.add(mesh);
-const texture_image_card_cta_examples = textureLoader.load("static/users/aboutus/images/image_card_aboutus.png"),
+const texture_image_card_cta_examples = textureLoader.load("images/image_card_aboutus.png"),
     geometry_image_card_cta_examples = new THREE.BoxGeometry(25, 28.46, 1e-4, 1, 1, .1),
     material_image_card_cta_examples = new THREE.MeshBasicMaterial({
         map: texture_image_card_cta_examples,
@@ -202,7 +202,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////// ///////////////////////////// /////////////////////////////
-loader_title.load("static/users/homepage/geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("../../geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_cta_examples = e.scene;
   geometry_rect_image_card_cta_examples.traverse((e => {
         if (e.isMesh) {
@@ -218,7 +218,7 @@ loader_title.load("static/users/homepage/geometries/geometry_card_square_cta_for
   geometry_rect_image_card_cta_examples.scale.set(1, 1, 2), scene.add(geometry_rect_image_card_cta_examples)
 }));
 //////////////////////// ///////////////////////////// /////////////////////////////
-loader_title.load("static/users/homepage/geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("../../geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_cta_examples2 = e.scene;
   geometry_rect_image_card_cta_examples2.traverse((e => {
         if (e.isMesh) {
@@ -276,7 +276,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////
-loader_title.load("static/users/homepage/geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+loader_title.load("../../geometries/geometry_card_capsule_feature_size_2.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {

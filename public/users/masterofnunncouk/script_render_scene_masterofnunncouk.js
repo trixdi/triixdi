@@ -762,43 +762,43 @@ for (let i = 0; i < numGeometries; i++) {
    };
   
   if (user_social_media_links[i][1] == "facebook"){
-   card_tik_texture = textureLoader.load("static/icons/facebook.png")
+   card_tik_texture = textureLoader.load("../../icons/facebook.png")
 
   } else if (user_social_media_links[i][1]  == "x") {
-   card_tik_texture = textureLoader.load("static/icons/x.png")
+   card_tik_texture = textureLoader.load("../../icons/x.png")
   } 
   else if (user_social_media_links[i][1]  == "youtube") {
-   card_tik_texture = textureLoader.load("static/icons/youtube.png")
+   card_tik_texture = textureLoader.load("../../icons/youtube.png")
   } 
   else if (user_social_media_links[i][1]  == "linkedin") {
-   card_tik_texture = textureLoader.load("static/icons/linkedin.png")
+   card_tik_texture = textureLoader.load("../../icons/linkedin.png")
   } 
   else if (user_social_media_links[i][1]  == "snapchat") {
-   card_tik_texture = textureLoader.load("static/icons/snapchat.png")
+   card_tik_texture = textureLoader.load("../../icons/snapchat.png")
   } 
   else if (user_social_media_links[i][1]  == "tiktok") {
-  card_tik_texture = textureLoader.load("static/icons/tiktok.png")
+  card_tik_texture = textureLoader.load("../../icons/tiktok.png")
   } 
   else if (user_social_media_links[i][1]  == "emailadress") {
-  card_tik_texture = textureLoader.load("static/icons/email.png")
+  card_tik_texture = textureLoader.load("../../icons/email.png")
   } 
   else if (user_social_media_links[i][1]  == "instagram") {
-   card_tik_texture = textureLoader.load("static/icons/instagram.png")
+   card_tik_texture = textureLoader.load("../../icons/instagram.png")
   } 
   else if (user_social_media_links[i][1]  == "itunes") {
-  card_tik_texture = textureLoader.load("static/icons/itunes.png")
+  card_tik_texture = textureLoader.load("../../icons/itunes.png")
   } 
   else if (user_social_media_links[i][1]  == "pinterest") {
-   card_tik_texture = textureLoader.load("static/icons/pinterest.png")
+   card_tik_texture = textureLoader.load("../../icons/pinterest.png")
   } 
   else if (user_social_media_links[i][1]  == "spotify") {
-     card_tik_texture = textureLoader.load("static/icons/spotify.png")
+     card_tik_texture = textureLoader.load("../../icons/spotify.png")
   } 
   else if (user_social_media_links[i][1]  == "twitch") {
-     card_tik_texture = textureLoader.load("static/icons/twitch.png")
+     card_tik_texture = textureLoader.load("../../icons/twitch.png")
   }
   else if (user_social_media_links[i][1]  == "discord") {
-     card_tik_texture = textureLoader.load("static/icons/discord.png")
+     card_tik_texture = textureLoader.load("../../icons/discord.png")
   };
 
    const  geometry_card_tik = new THREE.BoxGeometry(image_social_media_hei, image_social_media_wid, 1e-4, 1, 1, .1),

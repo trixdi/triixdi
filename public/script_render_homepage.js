@@ -100,7 +100,7 @@ screenWidth < 768 ? (
   y_POS_ctadescription = -29, 
   y_POS_ctaform = -40) 
 
-  : screenWidth > 768 && screenWidth < 1100 ? (z_dist_to_camera = 74.5) : screenWidth > 768 && screenWidth < 1366 ? (z_dist_to_camera = 65.5)  :  screenWidth > 1566 ? (z_dist_to_camera = 49) : null;
+  : screenWidth > 768 && screenWidth < 1100 ? (z_dist_to_camera = 79.5) : screenWidth > 768 && screenWidth < 1366 ? (z_dist_to_camera = 65.5)  :  screenWidth > 1566 ? (z_dist_to_camera = 49) : null;
 
 
 

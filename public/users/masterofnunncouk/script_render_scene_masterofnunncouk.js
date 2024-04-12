@@ -335,24 +335,6 @@ screenWidth < 768 ? (
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 image_social_media_hei = 8,
 image_social_media_wid = 8,
 
@@ -366,6 +348,10 @@ image_social_media_wid = 8,
 
     : screenWidth > 768 && screenWidth < 1366 && (z_dist_to_camera = 79.5);
 
+
+
+// end if mobile 
+ // end if mobile 
 
 
 

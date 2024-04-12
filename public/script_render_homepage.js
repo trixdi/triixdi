@@ -40,7 +40,7 @@ const loader_title = new GLTFLoader;
 
 const screenWidth = window.innerWidth,
     screenHeight = window.innerHeight;
-let z_dist_to_camera = 43,
+let z_dist_to_camera = 53,
     y_dist_to_caCmera = 67;
 
 var zcool = 0,
@@ -82,7 +82,7 @@ let cameraRig, activeCamera, activeHelper, cameraPerspective, cameraOrtho, camer
 //////////         IF MOBILE      ////////////////
 //////////////////////////////////////////////////
 screenWidth < 768 ? (
-
+  console.log(screenWidth, "screeaaaaanWidth"),
     z_dist_to_camera = 62.5, 
   zcool = 24, 
   z_POS_ctaexplorer = 0,
@@ -100,12 +100,13 @@ screenWidth < 768 ? (
   y_POS_ctadescription = -29, 
   y_POS_ctaform = -40) 
 
-    : screenWidth > 768 && screenWidth < 1366 && (z_dist_to_camera = 49.5);
+  : screenWidth > 768 && screenWidth < 1100 ? (z_dist_to_camera = 74.5) : screenWidth > 768 && screenWidth < 1366 ? (z_dist_to_camera = 65.5)  :  screenWidth > 1566 ? (z_dist_to_camera = 49) : null;
 
 
 
 
 
+    console.log(screenWidth, "screenWidth",z_dist_to_camera );
 
 
 
@@ -214,82 +215,24 @@ mesh_image_logo.position.set(X_POS_icon, y_POS_icon, z_POS_ctaexplorer), mesh_im
 
 
 
+ 
+
+
+
 
 
 //////////////////////////////////////////////////
 //////////         CARD FEATURE 1      ////////////////
 //////////////////////////////////////////////////
-  loader.load(font_path, function (fontLoaded) {
-font = fontLoaded;
-var geom_ref_pric = "Turn Flat Links Into Interactive Adventures!";
-var titleGeometry = new TextGeometry(geom_ref_pric, {
-    font: font,
-    size: 1.1, 
-    height: 0.02
-  });
-  const titleMaterial = new THREE.MeshPhongMaterial({ color: 0x2E2E2E }); // White color
-  const title = new THREE.Mesh(titleGeometry, titleMaterial);
-    const titleBoundingBox = new THREE.Box3().setFromObject(title); // Calculate the bounding box of the title
-    const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
-    const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
-  title.position.set(X_POS_cardsfeatures - (titleWidth/2), y_POS_cardsfeatures1 -   (titleHeight/2), z_POS_cardsfeatures1); // Center the title above the bar chart
-  scene.add(title); 
-});  // font loader
-////////////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
-    const geometry_rect_image_card_feature_1 = e.scene;
-  geometry_rect_image_card_feature_1.traverse((e => {
-        if (e.isMesh) {
-            const geometry_rect_image_card_feature_1 = new THREE.MeshPhongMaterial({
-                color: 0xAFF8080
-            });
-            e.material = geometry_rect_image_card_feature_1;
-
-        }
-    }));
-  geometry_rect_image_card_feature_1.position.set(X_POS_cardsfeatures,y_POS_cardsfeatures1, z_POS_card_front);
-  geometry_rect_image_card_feature_1.rotation.set(0, 3.14, 0);
-  geometry_rect_image_card_feature_1.scale.set(1, 1, 2);
-  scene.add(geometry_rect_image_card_feature_1)
-}));
-///////////////////////////////////////////////////
-loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
-    const geometry_rect_image_card_feature_2_2 = e.scene;
-  geometry_rect_image_card_feature_2_2.traverse((e => {
-        if (e.isMesh) {
-            const geometry_rect_image_card_feature_2_2 = new THREE.MeshPhongMaterial({
-                color: 0xFF4A4A
-            });
-            e.material = geometry_rect_image_card_feature_2_2;
-
-        }
-    })), geometry_rect_image_card_feature_2_2.position.set(X_POS_cardsfeatures,y_POS_cardsfeatures1, z_POS_card_back);
-    geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
-    geometry_rect_image_card_feature_2_2.scale.set(1.05, 1.15, 4), scene.add(geometry_rect_image_card_feature_2_2)
-}));
-
-
-
-
-
-
-
-
-
-
-
-//////////////////////////////////////////////////
-//////////         CARD FEATURE 2      ////////////////
-//////////////////////////////////////////////////
     loader.load(font_path, function (fontLoaded) {
   font = fontLoaded;
-  var geom_ref_pric = "Unveil your online presence in a dynamic\nstyle with our 3d-powered web builder!";
+  var geom_ref_pric = "Upgrade your link-in-bio in a dynamic\nstyle with our 3d-powered web builder!";
   var titleGeometry = new TextGeometry(geom_ref_pric, {
       font: font,
-      size: 1.1, 
+      size: 1.3, 
       height: 0.02
     });
-    const titleMaterial = new THREE.MeshPhongMaterial({ color: 0x363636 }); // White color
+    const titleMaterial = new THREE.MeshPhongMaterial({ color: 0x363636 }); //  
     const title = new THREE.Mesh(titleGeometry, titleMaterial);
       const titleBoundingBox = new THREE.Box3().setFromObject(title); // Calculate the bounding box of the title
       const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
@@ -350,7 +293,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
   var geom_ref_pric = "Imagine taking boring, ordinary URL links\nand catapulting them onto a visually\nbreath-taking landing page.";
   var titleGeometry = new TextGeometry(geom_ref_pric, {
       font: font,
-      size: 1.1, 
+      size: 1.2, 
       height: 0.02
     });
     const titleMaterial = new THREE.MeshPhongMaterial({ color: 0x363636 }); // White color
@@ -573,7 +516,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -15,  z_POS_ctaexplorer + 86.5); 
-    title.userData.link = "https://trixdi.fun/aboutus"
+    title.userData.link = "https://triixdi.vercel.app/users/aboutus/page_aboutus.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -585,7 +528,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.fun/aboutus"
+          e.userData.link = "https://triixdi.vercel.app/users/aboutus/page_aboutus.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -15, z_POS_ctaexplorer + 86);
@@ -602,7 +545,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.fun/aboutus"
+          e.userData.link = "https://triixdi.vercel.app/users/aboutus/page_aboutus.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-15, z_POS_ctaexplorer + 85);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -650,7 +593,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -25,  z_POS_ctaexplorer + 86.5); 
-    title.userData.link = "https://trixdi.fun/privacy_policy"
+    title.userData.link = "https://triixdi.vercel.app/page_privacy_policy.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -662,7 +605,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.fun/privacy_policy"
+          e.userData.link = "https://triixdi.vercel.app/page_privacy_policy.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -25, z_POS_ctaexplorer + 86);
@@ -679,7 +622,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.fun/privacy_policy"
+          e.userData.link = "https://triixdi.vercel.app/page_privacy_policy.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-25, z_POS_ctaexplorer + 85);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -712,7 +655,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -36,  z_POS_ctaexplorer + 86.5); 
-    title.userData.link = "https://trixdi.fun/terms_conditions"
+    title.userData.link = "https://triixdi.vercel.app/page_terms_conditions.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -724,7 +667,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.fun/terms_conditions"
+          e.userData.link = "https://triixdi.vercel.app/page_terms_conditions.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -36, z_POS_ctaexplorer + 86);
@@ -741,7 +684,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.fun/terms_conditions"
+          e.userData.link = "https://triixdi.vercel.app/page_terms_conditions.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-36, z_POS_ctaexplorer + 85);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -804,7 +747,10 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
 
 
 function changeBackgroundImage(e) {
-    scene.remove(mesh), sphereGeometry = new THREE.SphereGeometry(500, 60, 40), sphereGeometry.scale(-1, 1, 1), textureLoader = new THREE.TextureLoader, texture = textureLoader.load(e), console.log(texture), material = new THREE.MeshBasicMaterial({
+    scene.remove(mesh), sphereGeometry = new THREE.SphereGeometry(500, 60, 40), sphereGeometry.scale(-1, 1, 1), 
+    textureLoader = new THREE.TextureLoader, texture = textureLoader.load(e), 
+    console.log(texture), 
+    material = new THREE.MeshBasicMaterial({
         map: texture,
         aoMapIntensity: .1
     }), mesh = new THREE.Mesh(sphereGeometry, material), scene.add(mesh)

@@ -1,8 +1,8 @@
 {
     "redirects": [
       {
-        "source": "/you",
-        "destination": "/redirect.html"
+        "source": "/masterofnunncouk",
+        "destination": "/users/masterofnunncouk/page_masterofnunncouk.html"
       }
     ]
   }

@@ -82,7 +82,7 @@ let cameraRig, activeCamera, activeHelper, cameraPerspective, cameraOrtho, camer
 //////////         IF MOBILE      ////////////////
 //////////////////////////////////////////////////
 screenWidth < 768 ? (
-  console.log(screenWidth, "screeaaaaanWidth"),
+   
     z_dist_to_camera = 62.5, 
   zcool = 24, 
   z_POS_ctaexplorer = 0,
@@ -106,7 +106,7 @@ screenWidth < 768 ? (
 
 
 
-    console.log(screenWidth, "screenWidth",z_dist_to_camera );
+     
 
 
 
@@ -370,7 +370,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2, z_POS_cardsfeatures1); 
-    title.userData.link = "https://trixdi.vercel.app/users/masterofnunncouk/masterofnunncouk.html"
+    title.userData.link = "https://trixdi.fun/users/masterofnunncouk/masterofnunncouk.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -382,7 +382,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.vercel.app/users/masterofnunncouk/masterofnunncouk.html"
+          e.userData.link = "https://trixdi.fun/users/masterofnunncouk/masterofnunncouk.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer,z_POS_card_front);
@@ -399,7 +399,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.vercel.app/users/masterofnunncouk/masterofnunncouk.html"
+          e.userData.link = "https://trixdi.fun/users/masterofnunncouk/masterofnunncouk.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer,z_POS_card_back);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -516,7 +516,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -15,  z_POS_ctaexplorer + 86.5); 
-    title.userData.link = "https://trixdi.vercel.app/users/aboutus/aboutus.html"
+    title.userData.link = "https://trixdi.fun/users/aboutus/aboutus.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -528,7 +528,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.vercel.app/users/aboutus/aboutus.html"
+          e.userData.link = "https://trixdi.fun/users/aboutus/aboutus.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -15, z_POS_ctaexplorer + 86);
@@ -545,7 +545,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.vercel.app/users/aboutus/aboutus.html"
+          e.userData.link = "https://trixdi.fun/users/aboutus/aboutus.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-15, z_POS_ctaexplorer + 85);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -593,7 +593,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -25,  z_POS_ctaexplorer + 86.5); 
-    title.userData.link = "https://trixdi.vercel.app/page_privacy_policy.html"
+    title.userData.link = "https://trixdi.fun/page_privacy_policy.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -605,7 +605,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.vercel.app/page_privacy_policy.html"
+          e.userData.link = "https://trixdi.fun/page_privacy_policy.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -25, z_POS_ctaexplorer + 86);
@@ -622,7 +622,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.vercel.app/page_privacy_policy.html"
+          e.userData.link = "https://trixdi.fun/page_privacy_policy.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-25, z_POS_ctaexplorer + 85);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
@@ -655,7 +655,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
     const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
     const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
   title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -36,  z_POS_ctaexplorer + 86.5); 
-    title.userData.link = "https://trixdi.vercel.app/page_terms_conditions.html"
+    title.userData.link = "https://trixdi.fun/page_terms_conditions.html"
   scene.add(title); 
 }); 
 //////////////////////////////////////////////////////////
@@ -667,7 +667,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFBB69
             });
             e.material = geometry_rect_image_card_feature_1;
-          e.userData.link = "https://trixdi.vercel.app/page_terms_conditions.html"
+          e.userData.link = "https://trixdi.fun/page_terms_conditions.html"
         }
     }));
   geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -36, z_POS_ctaexplorer + 86);
@@ -684,7 +684,7 @@ loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
                 color: 0xFFCF96
             });
             e.material = geometry_rect_image_card_feature_2_2;
-          e.userData.link = "https://trixdi.vercel.app/page_terms_conditions.html"
+          e.userData.link = "https://trixdi.fun/page_terms_conditions.html"
         }
     })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-36, z_POS_ctaexplorer + 85);
     geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);

@@ -4,6 +4,10 @@
      {
        "source": "/:username",
        "destination": "/users/:username/:username.html"
+     },
+     {
+       "source": "/:username/:path*",
+       "destination": "/users/:username/:path*"
      }
    ]
  }

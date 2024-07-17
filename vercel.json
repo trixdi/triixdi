@@ -1,7 +1,9 @@
 {
-
-    "cleanUrls": true,
- "rewrites": [
-    { "source": "/users/:match*", "destination": "https://trixdi.fun/:path*" }
-  ]
-  }
+   "cleanUrls": true,
+   "rewrites": [
+     {
+       "source": "/users/:match*",
+       "destination": "https://trixdi.fun/:match*"
+     }
+   ]
+ }

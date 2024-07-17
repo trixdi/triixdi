@@ -442,7 +442,7 @@ image_social_media_wid = 8,
 ///////////////////////////////////////////////////////////////
 var user_username_Placeholder = "Master of Nunn.co.uk";
 var user_bio_Placeholder = ['MasterofNunn.co.uk a Life', 'Planner Club to Inspire &', 'Motivate and give', 'Self-Esteem.'];
-var user_profile_pic_placeholder = "image_profile_pic.PNG/"; 
+var user_profile_pic_placeholder = "image_profile_pic_masterofnunncouk.jpg/"; 
 var user_labels_link = ['Master of Nunn, Inspirational Motivator', 'Retro Shop', 'Fancy a Drink', 'Life Planner Club', ['Party T shirts - beautiful', 'designs for partying'], 'Virtual Garden Designer & Plantsman', 'My Book Store'];
 var links_list = [['https://MasterofNunn.co.uk'], ['https://seekandfindit.co.uk'], ['https://Fancyadrink.co.uk'], ['https://Lifeplanner.club'], ['https://party-t-shirts-3.creator-spring.com/'], ['https://masterofnunn.co.uk'], ['https://masterofnunn.co.uk'], [], [], [], [], []];
 var user_selected_background = "../../backgrounds/image_background_10.jpg";

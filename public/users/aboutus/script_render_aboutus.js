@@ -42,17 +42,20 @@ let z_dist_to_camera = 40,
     y_dist_to_caCmera = 67;
 var zcool = 0,
     X_POS_icon = 15,
-    X_POS_cardsfeatures = -15,
+    X_POS_cardsfeatures = 0,
     X_POS_ctaexplorer = 0,
     X_POS_ctadescription = -15,
     X_POS_ctaform = 0,
     y_POS_icon = 7,
-    y_POS_cardsfeatures1 = 13.9,
+    y_POS_cardsfeatures1 = 23.9,
     y_POS_cardsfeatures2 = 8.46,
     y_POS_cardsfeatures3 = 2,
-    y_POS_ctaexplorer = -8,
+    y_POS_ctaexplorer = -1,
     y_POS_ctadescription = -18,
-    y_POS_ctaform = -23,
+    y_POS_ctaform = -13,
+  z_POS_cardsfeatures1  = 0,
+  z_POS_card_front  = -0.05,
+  z_POS_card_back  = -0.3,
     z_POS_ctaexplorer = 0;
 let cameraRig, activeCamera, activeHelper, cameraPerspective, cameraOrtho, cameraPerspectiveHelper, cameraOrthoHelper;
 
@@ -170,7 +173,90 @@ const texture_image_card_cta_examples = textureLoader.load("images/image_card_ab
     }),
 mesh_image_card_cta_examples = new THREE.Mesh(geometry_image_card_cta_examples, material_image_card_cta_examples);
 mesh_image_card_cta_examples.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer + 17, z_POS_ctaexplorer), mesh_image_card_cta_examples.rotation.set(0, 0, 0), 
-scene.add(mesh_image_card_cta_examples);
+//scene.add(mesh_image_card_cta_examples);
+
+
+
+
+//////////////////////////////////////////////////
+//////////         CARD FEATURE 1      ////////////////
+//////////////////////////////////////////////////
+loader.load(font_path, function (fontLoaded) {
+    font = fontLoaded;
+    var geom_ref_pric = "Trixdi is driven by the vision of a web where  3D interactivity \nand visual storytelling are not just accessible, but the standard.";
+    var titleGeometry = new TextGeometry(geom_ref_pric, {
+        font: font,
+        size: 1.03, 
+        height: 0.02
+      });
+      const titleMaterial = new THREE.MeshPhongMaterial({ color: 0x363636 }); //  
+      const title = new THREE.Mesh(titleGeometry, titleMaterial);
+        const titleBoundingBox = new THREE.Box3().setFromObject(title); // Calculate the bounding box of the title
+        const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
+        const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
+      title.position.set(0 - (titleWidth/2), y_POS_cardsfeatures2 + (0.5), z_POS_cardsfeatures1); 
+      scene.add(title); 
+    });  // font loader
+  ///////////////////////////////////////////////////////////////////////////////////////
+  loader_title.load("../../geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+      const geometry_rect_image_card_feature_1 = e.scene;
+    geometry_rect_image_card_feature_1.traverse((e => {
+          if (e.isMesh) {
+              const geometry_rect_image_card_feature_1 = new THREE.MeshPhongMaterial({
+                  color: 0xAFF8080
+              });
+              e.material = geometry_rect_image_card_feature_1;
+  
+          }
+      }));
+    geometry_rect_image_card_feature_1.position.set(X_POS_cardsfeatures, y_POS_cardsfeatures2,z_POS_card_front);
+    geometry_rect_image_card_feature_1.rotation.set(0, 3.14, 0);
+    geometry_rect_image_card_feature_1.scale.set(1.3, 1, 2);
+    scene.add(geometry_rect_image_card_feature_1)
+  }));
+  ////////////////////////////////////////////////////////////////////////////////
+  loader_title.load("../../geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+      const geometry_rect_image_card_feature_2_2 = e.scene;
+    geometry_rect_image_card_feature_2_2.traverse((e => {
+          if (e.isMesh) {
+              const geometry_rect_image_card_feature_2_2 = new THREE.MeshPhongMaterial({
+                  color: 0xFF4A4A
+              });
+              e.material = geometry_rect_image_card_feature_2_2;
+  
+          }
+      })), geometry_rect_image_card_feature_2_2.position.set(X_POS_cardsfeatures, y_POS_cardsfeatures2,z_POS_card_back);
+      geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
+      geometry_rect_image_card_feature_2_2.scale.set(1.32, 1.15, 4), 
+      scene.add(geometry_rect_image_card_feature_2_2)
+  }));
+  ///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -202,7 +288,7 @@ var titleGeometry = new TextGeometry(geom_ref_pric, {
   scene.add(title); 
 }); 
 //////////////////////// ///////////////////////////// /////////////////////////////
-loader_title.load("../../geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load(" ../../geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_cta_examples = e.scene;
   geometry_rect_image_card_cta_examples.traverse((e => {
         if (e.isMesh) {

@@ -1,8 +1,7 @@
 {
-    "redirects": [
-      {
-        "source": "/you",
-        "destination": "/redirect.html"
-      }
-    ]
+
+    "cleanUrls": true,
+ "rewrites": [
+    { "source": "/:path*", "destination": "https://trixdi.fun/:path**" }
+  ]
   }

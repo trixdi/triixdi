@@ -2,8 +2,8 @@
    "cleanUrls": true,
    "rewrites": [
      {
-       "source": "/users/:match*",
-       "destination": "https://trixdi.fun/:match*"
+       "source": "/:username",
+       "destination": "/users/:username/:username.html"
      }
    ]
  }

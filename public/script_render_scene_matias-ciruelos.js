@@ -30,7 +30,7 @@ const text_heig = -1;
 const loader_title = new GLTFLoader;
 
 
-var font_asd_loader_path = "../../fonts/Super_Corn_Regular_JSON.json";
+var font_asd_loader_path = "fonts/Super_Corn_Regular_JSON.json";
 
 
  const screenWidth = window.innerWidth,
@@ -441,12 +441,12 @@ image_social_media_wid = 8,
 /////// VARS TO BE REPLACED
 ///////////////////////////////////////////////////////////////
 var user_username_Placeholder = "Matías Federico Ciruelos";
-var user_bio_Placeholder = ['Hello, I made this website. I work in software industry.'];
-var user_profile_pic_placeholder = "image_profile_pic.JPG"; 
+var user_bio_Placeholder = ['Hello, I made this website.'];
+var user_profile_pic_placeholder = "image_profile_pic_matias-ciruelos.JPG"; 
 var user_labels_link = ['linkedin', 'linkedin',];
 var links_list = [['https://www.linkedin.com/in/mat%C3%ADas-federico-ciruelos/'], ['https://www.linkedin.com/in/mat%C3%ADas-federico-ciruelos/'] ];
-var user_selected_background = "../../backgrounds/image_background_10.jpg";
-var user_social_media_links = [['https://facebook.com/www.seekandfindit.co.uk', 'facebook'], ['https://www.instagram.com/masterofnunn/', 'instagram'], ['mailto:masterofnunncouk@gmail.com', 'emailadress']];
+var user_selected_background = "backgrounds/image_background_10.jpg";
+var user_social_media_links = [  ['mailto:ciruelosmf@gmail.com', 'emailadress']];
 
 
 
@@ -657,7 +657,7 @@ if (strings_bio.length === 1){
 
 /////////////////////
 if (!(strings_bio.length === 0)) {
-loader_title.load("../../geometries/geometry_card_capsule_feature_size_3.glb", (e => {
+loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -674,7 +674,7 @@ loader_title.load("../../geometries/geometry_card_capsule_feature_size_3.glb", (
   scene.add(geometry_rect_image_card_feature_1)
 }));
 //////////////////////////////
-loader_title.load("../../geometries/geometry_card_capsule_feature_size_3.glb", (e => {
+loader_title.load("geometries/geometry_card_capsule_feature_size_3.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -748,43 +748,43 @@ for (let i = 0; i < numGeometries; i++) {
    };
   
   if (user_social_media_links[i][1] == "facebook"){
-   card_tik_texture = textureLoader.load("../../icons/facebook.png")
+   card_tik_texture = textureLoader.load("icons/facebook.png")
 
   } else if (user_social_media_links[i][1]  == "x") {
-   card_tik_texture = textureLoader.load("../../icons/x.png")
+   card_tik_texture = textureLoader.load("icons/x.png")
   } 
   else if (user_social_media_links[i][1]  == "youtube") {
-   card_tik_texture = textureLoader.load("../../icons/youtube.png")
+   card_tik_texture = textureLoader.load("icons/youtube.png")
   } 
   else if (user_social_media_links[i][1]  == "linkedin") {
-   card_tik_texture = textureLoader.load("../../icons/linkedin.png")
+   card_tik_texture = textureLoader.load("icons/linkedin.png")
   } 
   else if (user_social_media_links[i][1]  == "snapchat") {
-   card_tik_texture = textureLoader.load("../../icons/snapchat.png")
+   card_tik_texture = textureLoader.load("icons/snapchat.png")
   } 
   else if (user_social_media_links[i][1]  == "tiktok") {
-  card_tik_texture = textureLoader.load("../../icons/tiktok.png")
+  card_tik_texture = textureLoader.load("icons/tiktok.png")
   } 
   else if (user_social_media_links[i][1]  == "emailadress") {
-  card_tik_texture = textureLoader.load("../../icons/email.png")
+  card_tik_texture = textureLoader.load("icons/email.png")
   } 
   else if (user_social_media_links[i][1]  == "instagram") {
-   card_tik_texture = textureLoader.load("../../icons/instagram.png")
+   card_tik_texture = textureLoader.load("icons/instagram.png")
   } 
   else if (user_social_media_links[i][1]  == "itunes") {
-  card_tik_texture = textureLoader.load("../../icons/itunes.png")
+  card_tik_texture = textureLoader.load("icons/itunes.png")
   } 
   else if (user_social_media_links[i][1]  == "pinterest") {
-   card_tik_texture = textureLoader.load("../../icons/pinterest.png")
+   card_tik_texture = textureLoader.load("icons/pinterest.png")
   } 
   else if (user_social_media_links[i][1]  == "spotify") {
-     card_tik_texture = textureLoader.load("../../icons/spotify.png")
+     card_tik_texture = textureLoader.load("icons/spotify.png")
   } 
   else if (user_social_media_links[i][1]  == "twitch") {
-     card_tik_texture = textureLoader.load("../../icons/twitch.png")
+     card_tik_texture = textureLoader.load("icons/twitch.png")
   }
   else if (user_social_media_links[i][1]  == "discord") {
-     card_tik_texture = textureLoader.load("../../icons/discord.png")
+     card_tik_texture = textureLoader.load("icons/discord.png")
   };
 
    const  geometry_card_tik = new THREE.BoxGeometry(image_social_media_hei, image_social_media_wid, 1e-4, 1, 1, .1),
@@ -800,7 +800,7 @@ for (let i = 0; i < numGeometries; i++) {
 };
 ////////////////////////
 for (let i = 0; i < numGeometries; i++) {
-loader_title.load("../../geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
   y_position_x_link_geo = positions[i];
   if (i >=  6 ){
     x_position_x_link_geo =  -59.5;
@@ -828,7 +828,7 @@ loader_title.load("../../geometries/geometry_card_square_cta_form.glb", (e => {
   scene.add(geometry_rect_image_card_feature_1)
 }));
 ///////////////////////
-loader_title.load("../../geometries/geometry_card_square_cta_form.glb", (e => {
+loader_title.load("geometries/geometry_card_square_cta_form.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {
@@ -968,7 +968,7 @@ console.log("enter if string");
   } //  for loop
     } // else
 ///////////////////////
-loader_title.load("../../geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
+loader_title.load("geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
     const geometry_rect_image_card_feature_1 = e.scene;
   geometry_rect_image_card_feature_1.traverse((e => {
         if (e.isMesh) {
@@ -985,7 +985,7 @@ loader_title.load("../../geometries/geometry_capsule_size_1_roundedXL.glb", (e =
   scene.add(geometry_rect_image_card_feature_1)
 }));
 /////////////////////////////////
-loader_title.load("../../geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
+loader_title.load("geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
     const geometry_rect_image_card_feature_2_2 = e.scene;
   geometry_rect_image_card_feature_2_2.traverse((e => {
         if (e.isMesh) {

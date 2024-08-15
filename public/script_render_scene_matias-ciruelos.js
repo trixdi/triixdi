@@ -31,6 +31,7 @@ const loader_title = new GLTFLoader;
 
 
 var font_asd_loader_path = "fonts/Super_Corn_Regular_JSON.json";
+let font_path = "fonts/Super_Corn_Regular_JSON.json";
 
 
  const screenWidth = window.innerWidth,
@@ -1088,7 +1089,7 @@ loader.load(font_path, function (fontLoaded) {
 
 
 
-  
+
 
 
 

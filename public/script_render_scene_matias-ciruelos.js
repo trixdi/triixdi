@@ -441,10 +441,10 @@ image_social_media_wid = 8,
 /////// VARS TO BE REPLACED
 ///////////////////////////////////////////////////////////////
 var user_username_Placeholder = "Matías Federico Ciruelos";
-var user_bio_Placeholder = ['Hello, I made this website.'];
+var user_bio_Placeholder = ['Hello, I made this website, which intends to be a 3D link in bio.', 'Click on the pills to open link.' ];
 var user_profile_pic_placeholder = "image_profile_pic_matias-ciruelos.JPG"; 
-var user_labels_link = ['linkedin', 'linkedin',];
-var links_list = [['https://www.linkedin.com/in/mat%C3%ADas-federico-ciruelos/'], ['https://www.linkedin.com/in/mat%C3%ADas-federico-ciruelos/'] ];
+var user_labels_link = ['LinkedIn', 'Resume', 'GitHub', 'Side Project: AI directory' ];
+var links_list = [['https://www.linkedin.com/in/mat%C3%ADas-federico-ciruelos/'], ['https://drive.google.com/file/d/18RwIXdBY1fATHbjO0xndVMYZrrEhmT34/view?usp=sharing'] ,['https://github.com/ciruelosmf'], ['https://aiimageandvideogenerators.xyz']];
 var user_selected_background = "backgrounds/image_background_10.jpg";
 var user_social_media_links = [  ['mailto:ciruelosmf@gmail.com', 'emailadress']];
 
@@ -1025,6 +1025,70 @@ loader_title.load("geometries/geometry_capsule_size_1_roundedXL.glb", (e => {
 
 
 
+
+
+
+  
+
+///
+//////////////////////////////////////////////////
+//////////         CTA ABOUT US        ////////////////
+//////////////////////////////////////////////////
+loader.load(font_path, function (fontLoaded) {
+  font = fontLoaded;
+  var geom_ref_pric = "About Us.";
+  var titleGeometry = new TextGeometry(geom_ref_pric, {
+      font: font,
+      size: 1.20, 
+      height: 0.02
+    });
+    const titleMaterial = new THREE.MeshPhongMaterial({ color: 0x363636 }); // White color
+    const title = new THREE.Mesh(titleGeometry, titleMaterial);
+      const titleBoundingBox = new THREE.Box3().setFromObject(title); // Calculate the bounding box of the title
+      const titleWidth = titleBoundingBox.max.x - titleBoundingBox.min.x;
+      const titleHeight = titleBoundingBox.max.y - titleBoundingBox.min.y;
+    title.position.set(X_POS_ctaexplorer - (titleWidth/2), y_POS_ctaexplorer- (titleHeight/2)+0.2 -15,  z_POS_ctaexplorer + 86.5); 
+      title.userData.link = "https://trixdi.fun/users/aboutus/aboutus.html"
+    scene.add(title); 
+  }); 
+  //////////////////////////////////////////////////////////
+  loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+      const geometry_rect_image_card_feature_1 = e.scene;
+    geometry_rect_image_card_feature_1.traverse((e => {
+          if (e.isMesh) {
+              const geometry_rect_image_card_feature_1 = new THREE.MeshPhongMaterial({
+                  color: 0xFFBB69
+              });
+              e.material = geometry_rect_image_card_feature_1;
+            e.userData.link = "https://trixdi.fun/users/aboutus/aboutus.html"
+          }
+      }));
+    geometry_rect_image_card_feature_1.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer -15, z_POS_ctaexplorer + 86);
+    geometry_rect_image_card_feature_1.rotation.set(0, 3.14, 0);
+    geometry_rect_image_card_feature_1.scale.set(1, 1, 2);
+    scene.add(geometry_rect_image_card_feature_1)
+  }));
+  //////////////////////////////////////////////////////////
+  loader_title.load("geometries/geometry_card_capsule_feature_size_2.glb", (e => {
+      const geometry_rect_image_card_feature_2_2 = e.scene;
+    geometry_rect_image_card_feature_2_2.traverse((e => {
+          if (e.isMesh) {
+              const geometry_rect_image_card_feature_2_2 = new THREE.MeshPhongMaterial({
+                  color: 0xFFCF96
+              });
+              e.material = geometry_rect_image_card_feature_2_2;
+            e.userData.link = "https://trixdi.fun/users/aboutus/aboutus.html"
+          }
+      })), geometry_rect_image_card_feature_2_2.position.set(X_POS_ctaexplorer, y_POS_ctaexplorer-15, z_POS_ctaexplorer + 85);
+      geometry_rect_image_card_feature_2_2.rotation.set(0, 3.14, 0);
+      geometry_rect_image_card_feature_2_2.scale.set(1.05, 1.15, 4), 
+        scene.add(geometry_rect_image_card_feature_2_2)
+  }));
+  ///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+  
 
 
 

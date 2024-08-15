@@ -442,7 +442,7 @@ image_social_media_wid = 8,
 /////// VARS TO BE REPLACED
 ///////////////////////////////////////////////////////////////
 var user_username_Placeholder = "Matías Federico Ciruelos";
-var user_bio_Placeholder = ['Hello, I made this website, which intends to be a 3D link in bio.', 'Click on the pills to open link.' ];
+var user_bio_Placeholder = ['Hello, I made this website, which intends' ,'to be a 3D link in bio.', 'Click on the pills to open link.' ];
 var user_profile_pic_placeholder = "image_profile_pic_matias-ciruelos.JPG"; 
 var user_labels_link = ['LinkedIn', 'Resume', 'GitHub', 'Side Project: AI directory' ];
 var links_list = [['https://www.linkedin.com/in/mat%C3%ADas-federico-ciruelos/'], ['https://drive.google.com/file/d/18RwIXdBY1fATHbjO0xndVMYZrrEhmT34/view?usp=sharing'] ,['https://github.com/ciruelosmf'], ['https://aiimageandvideogenerators.xyz']];
